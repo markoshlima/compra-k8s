@@ -8,6 +8,7 @@ php -S 0.0.0.0:8080
 
 **Build docker container** <br />
 docker build . -t markoshlima/compra-k8s
+docker build . -t markoshlima/compra-k8s --platform linux/amd64 //EKS
 
 **Start docker container** <br />
 docker run -it -p 5003:8080 -d markoshlima/compra-k8s
